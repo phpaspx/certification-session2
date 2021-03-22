@@ -1,0 +1,11 @@
+{
+  "name": "certification-postman",
+  "version": "1.0.0",
+  "description": "backend automation victor aragon",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx newman run .\\APP\\tests\\backend\\collections\\Tasks.postman_collection.json -e .\\APP\\tests\\backend\\envVariables\\QA.postman_environment.json -r htmlextra --reporter-htmlextra-export .\\APP\\tests\\backend\\reports\\report.html"
+  },
+  "author": "Victor Aragon",
+  "license": "ISC"
+}
